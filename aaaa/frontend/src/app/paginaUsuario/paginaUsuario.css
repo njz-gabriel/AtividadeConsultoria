@@ -1,0 +1,527 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* garante rolagem geral da página */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+a:hover {
+  color: white;
+}
+
+.pagina-usuario {
+  display: flex;
+  min-height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  height: 130vh;
+  background-color: #fff;
+  border-right: 1px solid #e6e6e6;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.pagina-usuario main {
+  margin-left: 30px; 
+}
+
+/* Menu */
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.menu li:hover {
+  background-color: #e9efff;
+  color: #0a2b6b;
+}
+.menu li.ativo {
+  background-color: #0a2b6b;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Conteúdo */
+.bemVindo {
+  padding: 20px 0 10px 0;
+}
+
+.paginaPrincipal{
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+
+/* === CARDS === */
+.card-info {
+  border: 1px solid #dbd9d9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 90px; /* Diminui a altura do card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px; /* Menor espaçamento entre os cards */
+}
+
+.card-info:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-info .progresso {
+  margin-right: 15px;
+  padding: 10px;
+}
+
+/* Ícones */
+.icon {
+  font-size: 1.8rem;
+  margin: 0px;
+  padding: 0;
+}
+
+.posicaoIcon{
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.progresso{
+  margin-right: 30px;
+}
+
+/* Cores */
+.card-info.azul .icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #eaf1ff;
+  color: #004b9b;
+}
+.card-info.laranja .icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff4e6;
+  color: #f28b1a;
+}
+.card-info.verde .icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #eafaf1;
+  color: #1ea672;
+}
+.card-info.roxo .icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f5eaff;
+  color: #8b3ef7;
+}
+
+/* Textos */
+.titulo {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+   white-space: nowrap;
+}
+
+.valor {
+  color: #002b6b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: auto;
+}
+
+
+.coluna-esquerda, .coluna-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Garante que os Cards ocupem 100% da coluna */
+.coluna-esquerda .Cards,
+.coluna-direita .Cards {
+  width: 100%;
+}
+
+/* Pequeno ajuste para manter espaçamento do container principal */
+.pagina-usuario .row > main {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+.Cards {
+  max-width: 830px;
+  border: 1px solid #dbd9d9;
+  border-radius: 16px;
+  padding: 25px;
+  margin-top: 30px;
+  background: #fff;
+  margin-left: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 50px;
+}
+
+.Cards-estrutura {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icone-trilha {
+  background-color: #0a2b6b;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.titulo-principal {
+  font-weight: 600;
+  margin: 0;
+  color: #0a2b6b;
+}
+
+.subtitulo-trilha {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.progresso-container {
+  margin-top: 15px;
+}
+
+.progress {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  border: 1px solid #dbd9d9;
+}
+.progress-bar.azul-escuro {
+  background-color: #0a2b6b !important;
+}
+
+.porcentagemCurso {
+  font-weight: 500;
+  color: #0a2b6b;
+}
+
+.dados-trilha .label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.valor-trilha {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0a2b6b;
+}
+
+.proximo-curso {
+  color: #0a2b6b;
+  font-weight: 500;
+  margin: 0;
+}
+
+.btn-continuar {
+  background-color: #0a2b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  width: 100%;
+  transition: 0.3s;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+
+.btn-continuar:hover {
+  background-color: #09235a;
+}
+
+
+.primeiro-curso{
+  margin: 15px;
+  max-width: 250px;
+}
+
+.icon-curso {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* espaço entre o ícone e o texto */
+  color: #0a2b6b; /* azul escuro */
+  font-size: 0.95rem;
+  margin: 10px;
+}
+
+.icon-curso i {
+  font-size: 1rem;
+}
+
+.subtopcio {
+  max-width: 100px;
+  border: 1px solid #dbd9d9;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 0;
+  font-size:12px;
+  color: #0a2b6b;
+}
+
+.nivel{
+  padding: 3px;
+  margin: 0;
+  font-size:12px;
+  color: #0a2b6b;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.curso-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #dbd9d9;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 12px 20px;
+}
+
+.curso-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nome-curso {
+  font-weight: 500;
+  color: #0a2b6b;
+  margin: 0;
+}
+
+.detalhes-curso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #0a2b6b;
+}
+
+.detalhes-curso i {
+  font-size: 1rem;
+  color: #0a2b6b;
+}
+
+.categoria {
+  border: 1px solid #dbd9d9;
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: #0a2b6b;
+}
+
+.nivel {
+  font-size: 12px;
+  color: #0a2b6b;
+}
+
+.duracao {
+  font-weight: 500;
+  color: #000;
+}
+
+.btn-verDetalhes {
+  background: none;
+  border: none;
+  color: #0a2b6b;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-verDetalhes:hover {
+  color: #afadad;
+}
+
+.btn-todos-cursos {
+  width: 100%;
+  border: 1px solid #dbd9d9;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  color: #0a2b6b;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.btn-todos-cursos:hover {
+  background-color: #f5f5f5;
+}
+
+.treinamento {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.titulo-treinamento {
+  font-weight: 500;
+  color: #0a2b6b;
+  margin: 0;
+}
+
+.detalhe-treinamento {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 2px 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status.confirmado {
+  background-color: #0a2b6b;
+  color: #fff;
+}
+
+.status.aguardando {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.conquista {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.icone-conquista {
+  font-size: 1.4rem;
+}
+
+.icone-conquista.ouro {
+  color: #f7c948;
+}
+
+.icone-conquista.azul {
+  color: #3f8efc;
+}
+
+.icone-conquista.verde {
+  color: #28a745;
+}
+
+
+.pagina-usuario {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.Cards {
+  max-width: 100%;
+  margin-left: 0;
+}
+
+.coluna-esquerda {
+  flex: 1;
+  max-width: 65%;
+}
+
+.coluna-direita {
+  flex-shrink: 0;
+  width: 33%;
+}
+
+.pagina-usuario .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+}
+
+.pagina-usuario main {
+  width: 100%;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+
+  .pagina-usuario main {
+    padding: 20px 16px !important;
+  }
+
+  .Cards {
+    width: 100% !important;
+  }
+
+  .Cards-estrutura {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .curso-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btn-verDetalhes {
+    width: 100%;
+    text-align: center;
+  }
+
+  .lista-cursos {
+    width: 100%;
+  }
+
+  .curso-info {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+}

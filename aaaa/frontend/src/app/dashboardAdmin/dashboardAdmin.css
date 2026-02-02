@@ -1,0 +1,504 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  background-color: #f6f8ff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+}
+
+
+.pagina-usuario,
+.pagina-usuario main,
+.menu-lateral,
+.row,
+.card-info,
+.Cards,
+.card-treinamento {
+  min-width: 0 !important; 
+  box-sizing: border-box;
+}
+
+.row {
+  flex-wrap: wrap !important;
+}
+
+.pagina-usuario {
+  display: flex;
+  min-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .pagina-usuario {
+    flex-direction: column;
+  }
+
+  .menu-lateral {
+    min-height: auto;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .pagina-usuario main {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+.menu-lateral {
+  width: 260px;
+  min-height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #e6e6e6;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bi {
+  display: flex;
+}
+
+.pagina-usuario main {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu li:hover {
+  background-color: #e9efff;
+  color: #0a2b6b;
+}
+
+.menu li.ativo {
+  background-color: #0a2b6b;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Cards iniciais */
+.card-info {
+  border: 1px solid #dbd9d9;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white !important;
+  gap: 2rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.progresso {
+  margin-right: 30px;
+}
+
+/* Cores dos cards iniciais*/
+.card-info.azul .icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #eaf1ff;
+  color: #004b9b;
+}
+
+.card-info.laranja .icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff4e6;
+  color: #f28b1a;
+}
+
+.card-info.verde .icon {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #eafaf1;
+  color: #1ea672;
+}
+
+.card-info.roxo .icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f5eaff;
+  color: #8b3ef7;
+}
+
+.titulo {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+  margin-right: 50px;
+}
+
+.valor {
+  color: #002b6b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: auto;
+}
+
+.pagina-usuario .row {
+  margin: 0;
+  width: 100%;
+}
+
+/* Troca de Página */
+.introducao {
+  margin-right: 40px;
+}
+
+.trocaPagina {
+  width: 100%;
+  background-color: #f1f1f5;
+  border-radius: 20px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.trocaPagina .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.trocaPagina .nav-item {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.nav-pills .nav-link {
+  color: #000 !important;
+  background: transparent !important;
+  border-radius: 15px !important;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 15px;
+  font-weight: 600;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06) inset;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Buscar */
+.search-wrapper {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 1400px;
+  height: 48px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e4e7ec;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 45px;
+  min-width: 0; 
+}
+
+.search-container .search-icon {
+  position: absolute;
+  left: 16px;
+  font-size: 18px;
+  color: #7d8da0;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+/*gráficos*/
+.recharts-responsive-container {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 220px;
+}
+
+/* Treinamentos */
+.Cards {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #dbd9d9;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-principal {
+  font-weight: 600;
+  margin: 0;
+  color: #0A2B6B;
+  font-size: 15px;
+}
+
+.subtitulo-trilha {
+  margin: 0;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.card-treinamento {
+  border: 1px solid #dbd9d9;
+  border-radius: 15px;
+  padding: 0;
+  margin-top: 25px;
+  background: #fff;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.curso-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dbd9d9;
+  border-radius: 10px;
+  background: #fff;
+  padding: 14px 18px;
+}
+
+.icon-curso-quadro {
+  width: 45px;
+  height: 45px;
+  background-color: #0a2b6b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-curso-quadro i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.curso-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.curso-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-curso {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0a2b6b;
+  margin: 0;
+}
+
+.detalhes-curso {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #0a2b6b;
+}
+
+.duracao {
+  font-weight: 600;
+  color: #000;
+}
+
+.curso-direita {
+  text-align: right;
+}
+
+.vagas {
+  font-size: 14px;
+  color: #000;
+  margin: 0 0 5px 0;
+}
+
+.status-quase {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  border: none;
+}
+
+.status-disponivel {
+  background-color: #fff;
+  color: #0a2b6b;
+  border: 1px solid #0a2b6b;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .menu-lateral {
+    width: 100% !important; 
+    min-height: auto; 
+    border-right: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+  }
+  
+  .menu li {
+    margin-bottom: 0 !important;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .introducao {
+    flex-direction: column;
+    align-items: stretch !important; 
+    gap: 15px;
+    margin-right: 0 !important;
+  }
+  
+  .trocaPagina, 
+  .search-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .trocaPagina .nav-item {
+      font-size: 0.8rem;
+  }
+}
+
+.pagina-usuario .row.cards-iniciais {
+  justify-content: center !important;
+}
+
+/* Centralizar os cards iniciais */
+.row-cards {
+    display: flex;
+    justify-content: center !important;
+    gap: 20px;
+}
+
+/* Tamanho uniforme */
+.row-cards .col-12,
+.row-cards .col-sm-6,
+.row-cards .col-md-4,
+.row-cards .col-lg-3 {
+    max-width: 330px;
+}
+
+/* Cards ocupando 100% da largura */
+.row-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Cada card expande igualmente */
+.row-cards .col-12,
+.row-cards .col-md-4 {
+    flex: 1;              
+    max-width: none !important;
+}
+
+.card-info {
+    height: 150px;
+    width: 100%;
+}
+
+/* CELULARES */
+@media (max-width: 576px) {
+    .curso-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px;
+    }
+
+    .curso-esquerda {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .curso-direita {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #f0f0f0;
+        padding-top: 10px;
+    }
+    
+    .curso-direita .vagas {
+        margin-bottom: 0;
+    }
+
+    .titulo { font-size: 0.8rem; margin-right: 0; }
+    .valor { font-size: 1.4rem; }
+    .card-info { padding: 0 10px; height: 120px; }
+    .icon { font-size: 1.4rem; }
+}
+
+.grafico-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

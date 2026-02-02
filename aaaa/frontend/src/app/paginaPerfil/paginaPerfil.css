@@ -1,0 +1,199 @@
+/* ===========================
+   ESTILOS GERAIS DA PÁGINA
+=========================== */
+.pagina-usuario {
+    background-color: #f5f7fb;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.corPagina {
+    min-height: 100vh;
+}
+
+/* ===========================
+   SIDEBAR (menu lateral)
+=========================== */
+.sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid #e5e5e5;
+}
+
+.sidebar .menu li {
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.sidebar .menu li:hover {
+    background-color: #eef3ff;
+    cursor: pointer;
+}
+
+.sidebar .menu li i {
+    font-size: 20px;
+    color: #0a2b6b;
+}
+
+.sidebar .menu li span {
+    color: #0a2b6b;
+    font-weight: 500;
+}
+
+.sidebar .menu .ativo {
+    background-color: #0a2b6b;
+}
+
+.sidebar .menu .ativo i,
+.sidebar .menu .ativo span {
+    color: #fff;
+}
+
+/* MOBILE: sidebar vira menu superior */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* ===========================
+   CONTAINER DO PERFIL
+=========================== */
+.perfil-container {
+    border: 1px solid #e6e6e6;
+    background: #fff;
+}
+
+/* Avatar */
+.foto-perfil {
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Campos de info */
+.info-detalhes .form-control {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+/* ===========================
+   CARDS DE INFORMAÇÕES PROFISSIONAIS
+=========================== */
+.infoProfissionais-container .card {
+    border-radius: 14px;
+    transition: 0.25s ease;
+}
+
+.infoProfissionais-container .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Ícones */
+.infoProfissionais-container .icon {
+    border-radius: 12px !important;
+}
+
+/* ===========================
+   CONQUISTAS
+=========================== */
+.conquista-container {
+    border-radius: 14px;
+}
+
+.conquista-container .p-2 {
+    background-color: #f4f7ff !important;
+}
+
+.conquista-container h6 {
+    font-size: 15px;
+}
+
+/* ===========================
+   ESTATÍSTICAS
+=========================== */
+.estatistica-container {
+    border-radius: 14px;
+}
+
+.estatistica-container h3 {
+    font-size: 28px;
+}
+
+.estatistica-container small {
+    font-size: 13px;
+    color: #6c757d !important;
+}
+
+
+/* ====== GRID PROFISSIONAL (força comportamento estável) ====== */
+.infoProfissionais-container {
+  width: 100%;
+  padding: 0; /* já tem padding no card pai */
+  box-sizing: border-box;
+}
+
+/* grid que substitui row/col instáveis do bootstrap */
+.grid-prof {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  align-items: stretch; /* garante altura pareada dos cards */
+  width: 100%;
+  min-width: 0; /* evita overflow em flex parents */
+}
+
+/* card interno: altura e overflow tratados */
+.card-info-prof-item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #eef2f6;
+  box-shadow: 0 2px 8px rgba(12,24,60,.04);
+  width: 100%;
+  min-width: 0;        /* MUITO import — evita o "vazar" do card */
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ícone: tamanho fixo para não empurrar conteúdo */
+.card-info-prof-item .icon {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 12px;
+}
+
+/* texto: permitir quebra segura sem forçar largura */
+.card-info-prof-item .text-wrap {
+  min-width: 0;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+/* título pequeno/subtexto */
+.card-info-prof-item small {
+  display:block;
+  color:#6b6b6b;
+  margin-bottom:6px;
+}
+
+/* responsividade fina */
+@media (max-width: 900px) {
+  .grid-prof { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; }
+  .card-info-prof-item .icon { flex: 0 0 56px; width:56px; height:56px; }
+}
+
+@media (max-width: 576px) {
+  .grid-prof { grid-template-columns: 1fr; }
+  .card-info-prof-item { padding: 12px; gap:10px; }
+}
