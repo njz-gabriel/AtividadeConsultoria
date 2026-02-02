@@ -1,0 +1,8 @@
+.row.row-cols-1.row-cols-md-3 .card {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.row.row-cols-1.row-cols-md-3 .card:hover {
+  transform: scale(1);
+}

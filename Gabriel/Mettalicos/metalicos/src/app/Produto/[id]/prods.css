@@ -1,0 +1,11 @@
+.text-size-loucura{
+    font-size: 30px;
+}
+.text-size-loucura2{
+    font-size: 15px;
+}
+.func{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

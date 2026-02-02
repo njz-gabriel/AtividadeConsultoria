@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "metalica";
+  src: url('./../../../../public/Fonte/PASTOROF.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.titulo{
+    font-family: 'metalica';
+    font-size: 4rem;
+}
+.back{
+    background-color: rgb(39, 39, 202);
+}
+.meu-header {
+  min-height: 48px;
+  padding-block: 6px;
+}
+
+.meu-header .nav-link {
+  font-size: 0.9rem;
+}
+
+.back {
+  padding: 0;
+}

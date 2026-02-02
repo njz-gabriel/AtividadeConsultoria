@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nome": "Malha Pop Leve",
+    "descricao": "A Malha Pop leve é uma armadura pré-fabricada, projetada para otimizar projetos de construção que exigem durabilidade e resistência. Produzida com aço CA-60 nervurado, ela é soldada em todos os pontos de cruzamento, garantindo o correto espaçamento dos fios e excelente aderência ao concreto. Essa solução oferece controle eficaz de fissuramento, maior estabilidade e fácil manuseio, sendo fornecida em painéis com etiquetas individuais para facilitar o armazenamento e a gestão de estoque. ",
+    "preco": 40,
+    "img": "https://mais.gerdau.com.br/_next/image?url=https%3A%2F%2Fmcprod.mais.gerdau.com.br%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fa%2Fmalha-pop-gerdau2_1_.png&w=1920&q=80",
+    "categoria": "Malha",
+    "medida": "kg"
+  },
+  {
+    "id": 2,
+    "nome": "Estribo Nervurado",
+    "descricao": "O Estribo Nervurado é essencial para a construção civil, desenvolvido com o padrão CA-60 Nervurado para garantir a máxima eficiência em armações de concreto. Ideal para projetos residenciais ou de grande porte, proporciona economia de tempo, evita desperdícios e garante alta durabilidade e aderência.",
+    "preco": 2,
+    "img": "https://mais.gerdau.com.br/_next/image?url=https%3A%2F%2Fmcprod.mais.gerdau.com.br%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fs%2Festribo.png&w=1920&q=80",
+    "categoria": "Estribo",
+    "medida": "kg"
+  },
+  {
+    "id": 3,
+    "nome": "Barra Forjada Quadrada de Construção Mecânica",
+    "descricao": "A Barra Forjada Quadrada destaca-se pela alta resistência e excelente acabamento, sendo ideal para projetos de construção mecânica que exijam durabilidade e confiabilidade.O processo de forjamento confere à Barra Quadrada uma composição estrutural robusta e homogênea, resultando em melhor desempenho mecânico e menor incidência de falhas. Esse produto é especialmente indicado para uso em componentes industriais, eixos, engrenagens e outros elementos que requerem elevada resistência a choques e tensões.Além disso, sua superfície uniforme facilita processos de usinagem, soldagem e tratamento térmico, trazendo ainda mais versatilidade às aplicações. ",
+    "img": "https://mais.gerdau.com.br/_next/image?url=https%3A%2F%2Fmcprod.mais.gerdau.com.br%2Fmedia%2Fcatalog%2Fproduct%2Fb%2Fa%2Fbarra-forjada-quadrada.png&w=1920&q=80",
+    "preco": 52,
+    "categoria": "Barra",
+    "medida": "kg"
+  },
+  {
+    "id": 4,
+    "nome": "CercaFix",
+    "descricao": "O Cercafix é a escolha ideal para quem busca praticidade e economia na construção de cercas em propriedades rurais. Desenvolvido como uma alternativa eficiente aos balancins de madeira, o Cercafix facilita a delimitação de áreas, contenção de animais e proteção de culturas agrícolas. Com seu formato prático e resistente, ele oferece maior durabilidade e menor custo em projetos agropecuários. O Cercafix é fabricado com arame de alta resistência, garantindo uma solução confiável para a construção de cercas duradouras. Sua instalação rápida e fácil torna o processo de cercamento mais ágil, economizando tempo e recursos. ",
+    "img": "https://mais.gerdau.com.br/_next/image?url=https%3A%2F%2Fmcprod.mais.gerdau.com.br%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fe%2Fcercafix-gerdau_1.png&w=1920&q=80",
+    "preco": 33,
+    "categoria": "Arame",
+    "medida": "kg"
+  },
+  {
+    "id": 5,
+    "nome": "Arame ATC Claro ou Galvanizado",
+    "descricao": "O Arame ATC Claro ou Galvanizado é uma solução robusta e versátil, projetada para atender a demandas exigentes em uma ampla gama de setores industriais. É fabricado com alto teor de carbono, o que confere ao produto atributos de dureza e resistência à tração, podendo suportar cargas e tensões elevadas sem deformação permanente.     O modelo de Arame ATC Galvanizado, em especial, combina as características mecânicas do aço com alto teor de carbono com uma proteção adicional contra corrosão, o que é particularmente importante em ambientes expostos a umidade e agentes corrosivos.",
+    "preco": "30",
+    "img": "https://mais.gerdau.com.br/_next/image?url=https%3A%2F%2Fmcprod.mais.gerdau.com.br%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fr%2Farame-atc.png&w=1920&q=80",
+    "categoria": "Arame",
+    "medida": "kg"
+  },
+  {
+    "id": 6,
+    "nome": "Barra laminada Sextavada",
+    "descricao": "A Barra Laminada Sextavada de Construção Mecânica é um dos produtos da Linha Aços Especiais da obtida através da laminação a quente. As Barras Laminadas Sextavadas são utilizadas principalmente na agroindústria, na indústria metal-mecânica e no setor automotivo. Entre as principais aplicações, estão conexões hidráulicas e pneumáticas, oferecendo tecnologia agregada e a possibilidade de customizá-las conforme as necessidades do cliente.",
+    "preco": "10",
+    "img": "https://mais.gerdau.com.br/_next/image?url=https%3A%2F%2Fmcprod.mais.gerdau.com.br%2Fmedia%2Fcatalog%2Fproduct%2Fb%2Fa%2Fbarra-sextavada.png&w=1080&q=80",
+    "categoria": "Barra",
+    "medida": "kg"
+  }
+]

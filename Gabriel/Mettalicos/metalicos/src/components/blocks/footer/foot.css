@@ -1,0 +1,9 @@
+.back {
+    background-color: rgb(39, 39, 202);
+}
+.bizarro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
