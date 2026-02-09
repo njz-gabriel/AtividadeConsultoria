@@ -1,4 +1,4 @@
---riar tabela Treinamentos
+-- Criar tabela Treinamentos
 
 CREATE TABLE IF NOT EXISTS treinamentos (
     id INT AUTO_INCREMENT PRIMARY KEY,
