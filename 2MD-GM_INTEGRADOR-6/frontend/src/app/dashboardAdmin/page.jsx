@@ -127,7 +127,7 @@ export default function DashboardAdmin() {
                     {/* CARDS INICIAIS */}
                     <div className="row g-3 row-cards mt-3">
 
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 flex-wrap">
                             <div className="card-info azul">
                                 <div>
                                     <p className="titulo">Treinamentos Ativos</p>
@@ -137,7 +137,7 @@ export default function DashboardAdmin() {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 flex-wrap">
                             <div className="card-info laranja">
                                 <div>
                                     <p className="titulo">Colaboradores Inscritos</p>
@@ -148,7 +148,7 @@ export default function DashboardAdmin() {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 flex-wrap">
                             <div className="card-info roxo">
                                 <div>
                                     <p className="titulo">Taxa de Conclusão</p>
