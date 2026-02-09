@@ -1,0 +1,88 @@
+/* Avatar */
+.avatar-colaborador {
+  width: 40px;
+  height: 40px;
+  background: #0a2b6b;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+
+}
+
+/* Ajuste da busca */
+.input-busca {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .input-busca {
+    width: 100% !important;
+  }
+
+  .header-lista {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-info h5 {
+    font-size: 1rem;
+  }
+}
+
+/* ============================= */
+/* TABELA RESPONSIVA MOBILE */
+/* ============================= */
+@media (max-width: 768px) {
+  table thead {
+    display: none !important;
+  }
+
+  .tabela-colaboradores tbody tr {
+    display: block;
+    background: white;
+    margin-bottom: 14px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+  }
+
+  .tabela-colaboradores tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .tabela-colaboradores tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #0a2b6b;
+  }
+
+  .avatar-colaborador {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+
+  .nome-col {
+    font-size: 0.95rem;
+  }
+}
+
+/* Melhor separação no mobile */
+@media (max-width: 480px) {
+  .tabela-colaboradores tbody tr {
+    padding: 12px;
+  }
+
+  .avatar-colaborador {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+}

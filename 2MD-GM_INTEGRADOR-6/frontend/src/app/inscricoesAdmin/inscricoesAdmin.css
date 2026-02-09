@@ -1,0 +1,170 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    background-color: #f6f8ff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+}
+
+.pagina-usuario {
+    display: flex;
+    min-height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    height: 130vh;
+    background-color: #fff;
+    border-right: 1px solid #e6e6e6;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bi {
+    display: flex;
+}
+
+.pagina-usuario main {
+    margin-left: 30px;
+}
+
+.pagina-usuario main {
+    margin-left: 0 !important;
+}
+
+
+/* Menu */
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu li:hover {
+    background-color: #e9efff;
+    color: #0a2b6b;
+}
+
+.menu li.ativo {
+    background-color: #0a2b6b;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* CONTEUDO DA PÁGINA */
+
+/* Cards iniciais*/
+.card-info {
+    border: 1px solid #dbd9d9;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ícones */
+.icon {
+    font-size: 1.8rem;
+    margin: 0px;
+    padding: 0;
+}
+
+.progresso {
+    margin-right: 30px;
+}
+
+/* Cores dos cards iniciais*/
+.card-info.azul .icon {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eaf1ff;
+    color: #004b9b;
+}
+
+.card-info.laranja .icon {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff4e6;
+    color: #f28b1a;
+}
+
+.card-info.verde .icon {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eafaf1;
+    color: #1ea672;
+}
+
+.card-info.roxo .icon {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f5eaff;
+    color: #8b3ef7;
+}
+
+/* Textos */
+.titulo {
+    color: #555;
+    font-size: 0.95rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.valor {
+    color: #002b6b;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+.pagina-usuario .row {
+    margin: 0;
+    width: 100%;
+}
+
+.pagina-usuario main {
+    width: 100%;
+    flex: 1;
+}
+
+.pagina-dashboardInscricoes main {
+    width: 100% !important;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* Faz o componente ocupar toda a tela */
+.table-container,
+.gerenciar-inscricoes,
+.inscricoes-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Garante que a tabela abra até o limite total */
+table {
+    width: 100% !important;
+}

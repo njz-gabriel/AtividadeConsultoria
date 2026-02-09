@@ -1,0 +1,193 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    width: 100%;
+    /* garante rolagem geral da página */
+}
+
+.bg-light{
+    background-color: #f6f8ff !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+a:hover {
+  color: white;
+}
+
+.sidebar {
+    width: 260px;
+    height: 130vh;
+    background-color: #fff;
+    border-right: 1px solid #e6e6e6;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pagina-usuario main {
+    margin-left: 30px;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu li:hover {
+    background-color: #e9efff;
+    color: #0a2b6b;
+}
+
+.menu li.ativo {
+    background-color: #0a2b6b;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-no-hover {
+    background-color: white !important;
+    border: 1px solid #dee2e6 !important;
+    color: #212529 !important;
+    transition: none !important;
+}
+
+.btn-no-hover:hover,
+.btn-no-hover:active,
+.btn-no-hover:focus {
+    background-color: white !important;
+    border-color: #dee2e6 !important;
+    color: #212529 !important;
+    box-shadow: none !important;
+}
+
+.btn-treinamento {
+    right: 2px;
+    bottom: 75px;
+    border-radius: 10px;
+    background: #052c65;
+    border: none;
+    padding: 8px 16px;
+    font-weight: 500;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    justify-content: end;
+}
+ /* Barra de Pesquisa */
+.pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pesquisa input[type="text"] {
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    color: #495057;
+    outline: none;
+    box-shadow: none;
+}
+
+.pesquisa input[type="text"]::placeholder {
+    color: #6c757d;
+}
+
+.pesquisa input[type="text"]:focus {
+    border-color: #0a2b6b;
+}
+
+.pesquisa .bi-search {
+    color: #6c757d;
+    font-size: 18px;
+}
+
+/* Botão Filtros */
+.btn-filtros {
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-filtros:hover {
+    background-color: #0a2b6b;
+    color: white;
+    border-color: #0a2b6b;
+}
+
+.btn-filtros i {
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Dropdown de Filtros */
+.filtro-dropdown {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.filtro-dropdown select {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 200px;
+    transition: border-color 0.2s;
+}
+
+.filtro-dropdown select:focus {
+    border-color: #0a2b6b;
+}
+
+.btn-novo-treinamento {
+    background-color: #0a2b6b !important;
+    border: 1px solid #0a2b6b !important;
+    color: white !important;
+    display: flex !important; 
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    padding: 10px 20px; 
+    border-radius: 6px;
+    font-weight: 500;
+    white-space: nowrap; 
+    transition: background 0.3s ease;
+    text-decoration: none;
+    height: 46px; 
+}
+
+.btn-novo-treinamento:hover {
+    background-color: #082252 !important;
+    border-color: #082252 !important;
+    color: #fff !important;
+}
